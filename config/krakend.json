@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "extra_config": {
     "github_com/devopsfaith/krakend-opencensus": {
       "sample_rate": 100,
@@ -28,11 +28,11 @@
       "backend": [
         {
           "url_pattern": "/departments/{id}",
-          "sd": "dns",
+          "sd": "static",
           "host": [
-            "department-service.service.consul"
+            "http://127.0.0.1:55800"
           ],
-          "disable_host_sanitize": true
+          "disable_host_sanitize": false
         }
       ]
     },
@@ -42,11 +42,11 @@
       "backend": [
         {
           "url_pattern": "/departments/organization/{organizationId}/with-employees",
-          "sd": "dns",
+          "sd": "static",
           "host": [
-            "department-service.service.consul"
+            "http://127.0.0.1:55800"
           ],
-          "disable_host_sanitize": true,
+          "disable_host_sanitize": false,
           "is_collection": true
         }
       ]
@@ -57,11 +57,11 @@
       "backend": [
         {
           "url_pattern": "/departments",
-          "sd": "dns",
+          "sd": "static",
           "host": [
-            "department-service.service.consul"
+            "http://127.0.0.1:55800"
           ],
-          "disable_host_sanitize": true
+          "disable_host_sanitize": false
         }
       ]
     },
@@ -71,11 +71,11 @@
       "backend": [
         {
           "url_pattern": "/employees/{id}",
-          "sd": "dns",
+          "sd": "static",
           "host": [
-            "employee-service.service.consul"
+            "http://127.0.0.1:55801"
           ],
-          "disable_host_sanitize": true
+          "disable_host_sanitize": false
         }
       ]
     },
@@ -85,11 +85,11 @@
       "backend": [
         {
           "url_pattern": "/employees",
-          "sd": "dns",
+          "sd": "static",
           "host": [
-            "employee-service.service.consul"
+            "http://127.0.0.1:55801"
           ],
-          "disable_host_sanitize": true
+          "disable_host_sanitize": false
         }
       ]
     },
@@ -99,11 +99,11 @@
       "backend": [
         {
           "url_pattern": "/organizations/{id}",
-          "sd": "dns",
+          "sd": "static",
           "host": [
-            "organization-service.service.consul"
+            "http://127.0.0.1:55802"
           ],
-          "disable_host_sanitize": true
+          "disable_host_sanitize": false
         }
       ]
     },
@@ -113,11 +113,11 @@
       "backend": [
         {
           "url_pattern": "/organizations",
-          "sd": "dns",
+          "sd": "static",
           "host": [
-            "organization-service.service.consul"
+            "http://127.0.0.1:55802"
           ],
-          "disable_host_sanitize": true
+          "disable_host_sanitize": false
         }
       ]
     }
