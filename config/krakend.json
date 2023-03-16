@@ -6,7 +6,7 @@
       "reporting_period": 1,
       "exporters": {
         "zipkin": {
-          "collector_url": "http://localhost:9411/api/v2/spans",
+          "collector_url": "http://192.168.11.184:9411/api/v2/spans",
           "service_name": "api-gateway"
         }
       }
@@ -30,7 +30,7 @@
           "url_pattern": "/departments/{id}",
           "sd": "static",
           "host": [
-            "http://127.0.0.1:55800"
+            "http://192.168.11.184:55800"
           ],
           "disable_host_sanitize": false
         }
@@ -44,7 +44,7 @@
           "url_pattern": "/departments/organization/{organizationId}/with-employees",
           "sd": "static",
           "host": [
-            "http://127.0.0.1:55800"
+            "http://192.168.11.184:55800"
           ],
           "disable_host_sanitize": false,
           "is_collection": true
@@ -59,7 +59,7 @@
           "url_pattern": "/departments",
           "sd": "static",
           "host": [
-            "http://127.0.0.1:55800"
+            "http://192.168.11.184:55800"
           ],
           "disable_host_sanitize": false
         }
@@ -73,7 +73,7 @@
           "url_pattern": "/employees/{id}",
           "sd": "static",
           "host": [
-            "http://127.0.0.1:55801"
+            "http://192.168.11.184:55801"
           ],
           "disable_host_sanitize": false
         }
@@ -87,7 +87,7 @@
           "url_pattern": "/employees",
           "sd": "static",
           "host": [
-            "http://127.0.0.1:55801"
+            "http://192.168.11.184:55801"
           ],
           "disable_host_sanitize": false
         }
@@ -101,7 +101,7 @@
           "url_pattern": "/organizations/{id}",
           "sd": "static",
           "host": [
-            "http://127.0.0.1:55802"
+            "http://192.168.11.184:55802"
           ],
           "disable_host_sanitize": false
         }
@@ -115,7 +115,7 @@
           "url_pattern": "/organizations",
           "sd": "static",
           "host": [
-            "http://127.0.0.1:55802"
+            "http://192.168.11.184:55802"
           ],
           "disable_host_sanitize": false
         }
