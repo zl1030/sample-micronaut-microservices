@@ -37,6 +37,20 @@
       ]
     },
     {
+      "endpoint": "/department/organization/{organizationId}",
+      "method": "GET",
+      "backend": [
+        {
+          "url_pattern": "/departments/organization/{organizationId}",
+          "sd": "static",
+          "host": [
+            "http://192.168.11.184:55800"
+          ],
+          "disable_host_sanitize": false
+        }
+      ]
+    },
+    {
       "endpoint": "/department-with-employees/{organizationId}",
       "method": "GET",
       "backend": [
