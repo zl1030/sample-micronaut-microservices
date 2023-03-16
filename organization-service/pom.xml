@@ -116,7 +116,7 @@
                     <compilerArgs>
                         <arg>-Amicronaut.processing.group=pl.piomin.services</arg>
                         <arg>-Amicronaut.processing.module=organization-service</arg>
-                        <arg>-Amicronaut.openapi.views.spec=rapidoc.enabled=true,swagger-ui.enabled=true,swagger-ui.theme=flattop</arg>
+                        <arg>-Amicronaut.openapi.views.spec=rapidoc.enabled=true,rapipdf.enabled=true,swagger-ui.enabled=true,swagger-ui.theme=flattop</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
