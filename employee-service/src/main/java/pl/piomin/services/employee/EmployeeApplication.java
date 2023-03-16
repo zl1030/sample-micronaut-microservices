@@ -10,7 +10,7 @@ import io.swagger.v3.oas.annotations.info.Info;
                 title = "Employees Management",
                 version = "1.0",
                 description = "Employee API",
-                contact = @Contact(url = "https://piotrminkowski.wordpress.com", name = "Piotr Mińkowski", email = "piotr.minkowski@gmail.com")
+                contact = @Contact(url = "http://www.abc.xyz", name = "Zhou Lei", email = "zl1030@163.com")
         )
 )
 public class EmployeeApplication {
