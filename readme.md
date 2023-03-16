@@ -10,3 +10,11 @@
 1. Detailed description can be found here: [Quick Guide to Microservices with Micronaut Framework](https://piotrminkowski.com/2019/01/25/quick-guide-to-microservices-with-micronaut-framework/)
 
 2. Detailed description can be found here: [Microservices with Micronaut, KrakenD and Consul](https://piotrminkowski.com/2021/02/23/microservices-with-micronaut-krakend-and-consul/)
+
+
+依赖服务部署命令:
+```bash
+docker run -d --name=zipkin -p 9411:9411 openzipkin/zipkin
+docker run -d --name=consul -p 8500:8500 -p 8600:8600/udp consul
+docker run -d --name=krakend -p 8080:8080 -v $PWD:/etc/krakend/ devopsfaith/krakend run --config /etc/krakend/krakend.json
+```
